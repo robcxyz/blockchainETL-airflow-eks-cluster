@@ -45,18 +45,14 @@ $ cd charts/stable/airflow
 ```
 change as such: 
 ```
-## configs for the DAG git repository & sync container
+###################################
+# Airflow - DAGs Configs
+###################################
   ##
-  git:
-    ## url of the git repository
-    ##
-    ## EXAMPLE: (HTTP)
-    ##   url: "https://github.com/torvalds/linux.git"
-    ##
-    ## EXAMPLE: (SSH)
-    ##   url: "ssh://git@github.com:torvalds/linux.git"
-    ##
-    url: "https://github.com/GGtray/airflow-dags.git"
+  dags:
+  ## the airflow dags folder
+  ##
+  path: "https://github.com/GGtray/airflow-dags.git"
 
     ## the branch/tag/sha1 which we clone
     ##
